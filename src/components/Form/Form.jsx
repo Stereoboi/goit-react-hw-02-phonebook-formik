@@ -12,7 +12,7 @@ export class FormContact extends Component {
 
     schema = yup.object().shape({
     name: yup.string().required(),
-    number: yup.number().min(6).required(),
+    number: yup.string().min(6).required(),
   })
 
   handleInputChange = event => {
