@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { nanoid } from "nanoid";
-import { Form } from "../Form/Form";
+import { FormContact } from "../Form/Form";
 import { Filter } from "../Filter/Filter";
 import { ContactList } from "components/ContactList/ContactList";
 import { Title } from "components/Title/Title";
@@ -59,7 +59,7 @@ export class App extends Component {
     return (
       <Wrapper>
         <Title title={'Phonebook' } />
-        <Form onSubmit={this.formSubmitHandler} />
+        <FormContact onSubmit={this.formSubmitHandler} />
         <Filter
           value={this.state.filter}
           onChange={this.handleFilterChange}
